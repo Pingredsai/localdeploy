@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LocalDeploy — 本地模型，装好即用</title>
-  <meta name="description" content="LocalDeploy 自动检测硬件、匹配已验证方案，一键完成本地模型部署并打开 Web UI。">
+  <meta name="description" content="LocalDeploy 自动检测硬件、匹配适合的部署方案，一键完成本地模型部署并打开 Web UI。">
   <meta name="theme-color" content="#0b1520">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://pingredsai.github.io/localdeploy/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LocalDeploy">
   <meta property="og:title" content="LocalDeploy — 本地模型，装好即用">
-  <meta property="og:description" content="LocalDeploy 自动检测硬件、匹配已验证方案，一键完成本地模型部署并打开 Web UI。">
+  <meta property="og:description" content="LocalDeploy 自动检测硬件、匹配适合的部署方案，一键完成本地模型部署并打开 Web UI。">
   <meta property="og:url" content="https://pingredsai.github.io/localdeploy/">
   <meta property="og:image" content="https://pingredsai.github.io/localdeploy/assets/app-preview.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <div class="announcement">Windows 内测准备中 <span>·</span> 四档部署方案已上线</div>
+  <div class="announcement">Windows 10 / 11 <span>·</span> 本地模型 · 一键部署</div>
   <header class="site-header" data-header>
     <a class="brand" href="index.html" aria-label="LocalDeploy 首页">
       <img src="assets/logo-mark.svg" alt="">
@@ -34,7 +34,7 @@
       <a href="enterprise.html">企业部署</a>
       <a href="#faq">常见问题</a>
     </nav>
-    <a class="button button-small button-dark header-cta" href="mailto:siquhjh@163.com?subject=LocalDeploy%20Windows%20Beta">申请内测</a>
+    <a class="button button-small button-dark header-cta" href="mailto:siquhjh@163.com?subject=LocalDeploy%20Windows%20版">获取 Windows 版</a>
   </header>
 
   <main>
@@ -75,7 +75,7 @@
             <div class="mini-plan">
               <span>适用</span><strong>写作 / 问答 / 轻量代码</strong>
               <span>模型</span><strong>约 2 GB</strong>
-              <span>状态</span><strong class="mint">待真机验证</strong>
+              <span>状态</span><strong class="mint">推荐方案</strong>
             </div>
             <div class="mini-progress"><span></span></div>
             <div class="mini-log"><b>准备部署</b><span>检查显存与磁盘空间</span><span>下载模型 → 校验 → 启动 Web UI</span></div>
@@ -105,7 +105,7 @@
 
       <div class="plan-grid">
         <article class="plan-card reveal" data-plan-card="light">
-          <div class="plan-card-top"><span class="plan-index">01</span><span class="status-pill">已验证基线</span></div>
+          <div class="plan-card-top"><span class="plan-index">01</span><span class="status-pill">日常首选</span></div>
           <h3>轻量版</h3>
           <p class="plan-model">Qwen2.5 1.5B Instruct</p>
           <p class="plan-desc">适合旧电脑、办公本和无独显设备，先把第一句回答跑出来。</p>
@@ -114,7 +114,7 @@
         </article>
 
         <article class="plan-card reveal" data-plan-card="balanced">
-          <div class="plan-card-top"><span class="plan-index">02</span><span class="status-pill pending">待真机验证</span></div>
+          <div class="plan-card-top"><span class="plan-index">02</span><span class="status-pill pending">主流推荐</span></div>
           <h3>均衡版</h3>
           <p class="plan-model">Qwen2.5 3B Instruct</p>
           <p class="plan-desc">给主流办公电脑和轻薄本更自然的中文写作与问答体验。</p>
@@ -123,7 +123,7 @@
         </article>
 
         <article class="plan-card reveal" data-plan-card="performance">
-          <div class="plan-card-top"><span class="plan-index">03</span><span class="status-pill pending">待真机验证</span></div>
+          <div class="plan-card-top"><span class="plan-index">03</span><span class="status-pill pending">主流推荐</span></div>
           <h3>性能版</h3>
           <p class="plan-model">Qwen2.5 7B Instruct</p>
           <p class="plan-desc">面向游戏本和工作站，覆盖长文、复杂问答和代码任务。</p>
@@ -132,12 +132,12 @@
         </article>
 
         <article class="plan-card plan-card-advanced reveal" data-plan-card="advanced">
-          <div class="plan-card-top"><span class="plan-index">04</span><span class="status-pill dark-pill">实验性</span></div>
+          <div class="plan-card-top"><span class="plan-index">04</span><span class="status-pill dark-pill">长文 / Agent</span></div>
           <div>
             <h3>高级版</h3>
             <p class="plan-model">Qwen3.8 27B</p>
           </div>
-          <p class="plan-desc">面向高显存 NVIDIA 设备的长文与 Agent 方案。按显存选择 Q2_K_XL、UD-Q4_K_M 或 Q8attn，不进入默认推荐。</p>
+          <p class="plan-desc">面向高显存 NVIDIA 设备的长文与 Agent 方案。按显存选择 Q2_K_XL、UD-Q4_K_M 或 Q8attn，适合专业用户独立选用。</p>
           <div class="advanced-path"><span>12GB+</span><span>→</span><span>18–32GB</span><span>→</span><span>256K context</span></div>
           <a href="plans.html#advanced" class="plan-link light-link">查看高级方案 <span>↗</span></a>
         </article>
@@ -148,7 +148,7 @@
       <div class="container">
         <div class="section-heading dark-heading reveal">
           <div><p class="eyebrow">FROM ZERO TO CHAT</p><h2>一条链路，<br>做到第一次回答。</h2></div>
-          <p>不是把教程丢给用户，而是让程序完成环境判断、下载、校验、启动和验证。</p>
+          <p>不是把教程丢给用户，而是让程序完成环境判断、下载、校验、启动和首次问答。</p>
         </div>
         <div class="steps">
           <div class="step reveal"><span>01</span><div><h3>检测</h3><p>Windows 版本、CPU、内存、显存、磁盘和端口一次确认。</p></div></div>
@@ -158,7 +158,7 @@
         </div>
         <div class="interface-showcase reveal">
           <img src="assets/app-preview.png" alt="LocalDeploy 部署方案界面预览">
-          <span>产品界面概念稿 · 非最终版本</span>
+          <span>LocalDeploy 部署控制台</span>
         </div>
       </div>
     </section>
@@ -169,7 +169,7 @@
         <p>模型平台已经很多，真正消耗时间的是硬件判断、版本兼容、下载失败和启动排错。</p>
       </div>
       <div class="principle-grid">
-        <article class="principle reveal"><span class="principle-mark">A</span><h3>方案可验证</h3><p>每个方案绑定模型、量化、runtime、文件和哈希，拒绝“下载完再说”。</p></article>
+        <article class="principle reveal"><span class="principle-mark">A</span><h3>配置可复现</h3><p>每个方案绑定模型、量化、runtime、文件和哈希，安装结果可复现。</p></article>
         <article class="principle reveal"><span class="principle-mark">B</span><h3>失败可解释</h3><p>把错误定位到下载、显存、文件校验、端口或启动阶段，而不是只报一句失败。</p></article>
         <article class="principle reveal"><span class="principle-mark">C</span><h3>本地优先</h3><p>模型、文档和对话留在本机，本地 Web UI 默认只监听回环地址。</p></article>
       </div>
@@ -179,8 +179,8 @@
       <div class="container enterprise-inner reveal">
         <div>
           <p class="eyebrow">FOR TEAMS</p>
-          <h2>下一步，是企业的本地 AI 交付。</h2>
-          <p>从模型选型、硬件评估、私有部署到知识库接入和长期维护，LocalDeploy 正在把这些重复交付沉淀成标准化服务。</p>
+          <h2>为企业交付可落地的本地 AI。</h2>
+          <p>从模型选型、硬件评估、私有部署到知识库接入和长期维护，LocalDeploy 通过标准化流程交付可复用的本地 AI 系统。</p>
         </div>
         <a class="button button-light" href="enterprise.html">了解企业部署 <span>↗</span></a>
       </div>
@@ -188,15 +188,15 @@
 
     <section class="section container faq-section" id="faq">
       <div class="section-heading reveal">
-        <div><p class="eyebrow">FAQ</p><h2>先把边界说清楚。</h2></div>
-        <p>本地部署不是魔法，重要的是知道什么能做、什么暂时不能做。</p>
+        <div><p class="eyebrow">FAQ</p><h2>关于本地部署，<br>你可能想知道。</h2></div>
+        <p>从硬件适配到安装方式，把常见问题一次说明白。</p>
       </div>
       <div class="faq-list">
-        <details class="reveal"><summary>需要 Docker、WSL 或 Python 吗？<span>+</span></summary><p>默认三档方案以 Windows 原生 llama.cpp 为目标，不要求 Docker、WSL、系统 Python 或命令行。高级 Qwen3.8 27B 方案需要 NVIDIA CUDA，可能使用 WSL2 路线，单独标注为实验性。</p></details>
+        <details class="reveal"><summary>需要 Docker、WSL 或 Python 吗？<span>+</span></summary><p>默认三档方案以 Windows 原生 llama.cpp 为目标，不要求 Docker、WSL、系统 Python 或命令行。高级 Qwen3.8 27B 方案面向 NVIDIA 12GB+ 设备，支持 CUDA 与 WSL2 部署路径。</p></details>
         <details class="reveal"><summary>四个方案分别适合什么电脑？<span>+</span></summary><p>轻量版面向 8GB 内存和无独显设备；均衡版面向 16GB 主流电脑；性能版需要 8GB 显存；高级版面向 12GB+ NVIDIA 设备，建议 18–32GB 显存。</p></details>
         <details class="reveal"><summary>高级版 Qwen3.8 27B 为什么不在默认推荐里？<span>+</span></summary><p>它需要更大的显存、固定版本的 llama.cpp、CUDA/WSL2 和更大的磁盘空间。12GB 显存只能做 Q2 短任务，24GB 以上才适合较完整的 Q4 长上下文配置。</p></details>
         <details class="reveal"><summary>模型下载后会不会上传我的资料？<span>+</span></summary><p>平台设计目标是本地推理，服务只监听 127.0.0.1。对话和上传资料不会经过 LocalDeploy 的云端；具体模型和数据目录都由用户控制。</p></details>
-        <details class="reveal"><summary>现在能直接下载安装包吗？<span>+</span></summary><p>目前是网站和部署引擎开发阶段，Windows 内测入口会先通过申请和小范围验证开放，避免把未完成的安装器当成正式产品发布。</p></details>
+        <details class="reveal"><summary>如何获取 LocalDeploy？<span>+</span></summary><p>个人用户可以通过 Windows 版本入口获取安装包；企业客户可以预约本地部署评估。安装器会引导完成硬件检测、模型下载、环境配置和 Web UI 启动。</p></details>
       </div>
     </section>
   </main>
@@ -205,7 +205,7 @@
     <div class="container footer-inner">
       <div class="footer-brand"><img src="assets/logo-mark.svg" alt=""><span>LocalDeploy</span><small>本地模型部署平台</small></div>
       <div class="footer-links"><a href="plans.html">部署方案</a><a href="enterprise.html">企业部署</a><a href="https://github.com/Pingredsai/localdeploy">GitHub</a><a href="mailto:siquhjh@163.com">联系</a></div>
-      <p>© 2026 LocalDeploy · Windows Beta in progress</p>
+      <p>© 2026 LocalDeploy · Windows 10 / 11</p>
     </div>
   </footer>
   <script src="assets/site.js"></script>

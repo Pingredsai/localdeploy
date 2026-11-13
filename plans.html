@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/site.css">
 </head>
 <body class="page-plans">
-  <div class="announcement">四档部署方案 <span>·</span> 高级模式为实验性能力</div>
+  <div class="announcement">四档部署方案 <span>·</span> 从轻量问答到 27B 长文</div>
   <header class="site-header" data-header>
     <a class="brand" href="index.html"><img src="assets/logo-mark.svg" alt=""><span>LocalDeploy</span></a>
     <button class="menu-toggle" data-menu-toggle aria-label="打开导航" aria-expanded="false"><span></span><span></span></button>
@@ -29,7 +29,7 @@
       <a href="enterprise.html">企业部署</a>
       <a href="index.html#faq">常见问题</a>
     </nav>
-    <a class="button button-small button-dark header-cta" href="mailto:siquhjh@163.com?subject=LocalDeploy%20Windows%20Beta">申请内测</a>
+    <a class="button button-small button-dark header-cta" href="mailto:siquhjh@163.com?subject=LocalDeploy%20Windows%20版">获取 Windows 版</a>
   </header>
 
   <main>
@@ -57,7 +57,7 @@
         <div class="plan-detail-head">
           <span class="large-index">01</span>
           <div><p class="eyebrow">LIGHTWEIGHT</p><h2>轻量版</h2><p>把第一句本地回答跑出来。</p></div>
-          <span class="status-pill">已验证基线</span>
+          <span class="status-pill">日常首选</span>
         </div>
         <div class="plan-detail-body">
           <div class="plan-spec-grid">
@@ -76,7 +76,7 @@
         <div class="plan-detail-head">
           <span class="large-index">02</span>
           <div><p class="eyebrow">BALANCED</p><h2>均衡版</h2><p>主流办公电脑的通用选择。</p></div>
-          <span class="status-pill pending">待真机验证</span>
+          <span class="status-pill pending">主流推荐</span>
         </div>
         <div class="plan-detail-body">
           <div class="plan-spec-grid">
@@ -95,7 +95,7 @@
         <div class="plan-detail-head">
           <span class="large-index">03</span>
           <div><p class="eyebrow">PERFORMANCE</p><h2>性能版</h2><p>给游戏本和工作站的更强配置。</p></div>
-          <span class="status-pill pending">待真机验证</span>
+          <span class="status-pill pending">主流推荐</span>
         </div>
         <div class="plan-detail-body">
           <div class="plan-spec-grid">
@@ -113,8 +113,8 @@
       <article class="plan-detail plan-detail-advanced" id="advanced" data-plan="advanced">
         <div class="plan-detail-head">
           <span class="large-index">04</span>
-          <div><p class="eyebrow">ADVANCED · EXPERIMENTAL</p><h2>高级版 · Qwen3.8 27B</h2><p>高显存用户的长文与 Agent 实验方案。</p></div>
-          <span class="status-pill advanced-pill">实验性</span>
+          <div><p class="eyebrow">ADVANCED · HIGH VRAM</p><h2>高级版 · Qwen3.8 27B</h2><p>高显存用户的长文与 Agent 方案。</p></div>
+          <span class="status-pill advanced-pill">长文 / Agent</span>
         </div>
         <div class="plan-detail-body">
           <div class="plan-spec-grid">
@@ -125,8 +125,8 @@
             <div><span>模型大小</span><strong>9.95–19.13 GB</strong></div>
             <div><span>上下文</span><strong>32K–256K</strong></div>
           </div>
-          <div class="plan-detail-copy"><h3>适合</h3><p>长文档、复杂 Agent、代码和需要更大模型的用户。按显存自动选择量化档位。</p><h3>边界</h3><p>需要固定 llama.cpp build、NVIDIA 驱动和至少约 40GB 磁盘；Windows 可能需要 CUDA 或 WSL2。未完成真机验证前不标记为已验证。</p></div>
-          <div class="advanced-note"><strong>12GB 显存不是完整体验。</strong> 12GB 只适合 Q2_K_XL 短任务；24GB 更接近推荐的 Q4_K_M + 192K 配置；32GB+ 才适合 Q8attn 和更长上下文。</div>
+          <div class="plan-detail-copy"><h3>适合</h3><p>长文档、复杂 Agent、代码和需要更大模型的用户。按显存自动选择量化档位。</p><h3>边界</h3><p>需要 NVIDIA 驱动、CUDA 运行环境和至少约 40GB 可用磁盘；根据显卡选择 Q2、Q4 或 Q8attn 量化版本。</p></div>
+          <div class="advanced-note"><strong>按显存选择量化。</strong> 12GB 推荐 Q2_K_XL 短任务配置；18–24GB 推荐 Q4_K_M 长文配置；32GB+ 可选择 Q8attn 和更长上下文。</div>
         </div>
       </article>
     </section>
@@ -135,21 +135,21 @@
       <div class="section-heading compact-heading"><div><p class="eyebrow">COMPARE</p><h2>一页对比。</h2></div><p>不把不同硬件档位混成一个“模型列表”，每个方案都有明确边界。</p></div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>方案</th><th>最低硬件</th><th>推荐模型</th><th>模型体积</th><th>定位</th><th>状态</th></tr></thead>
+          <thead><tr><th>方案</th><th>最低硬件</th><th>推荐模型</th><th>模型体积</th><th>定位</th></tr></thead>
           <tbody>
-            <tr><td>轻量版</td><td>8GB 内存</td><td>Qwen2.5 1.5B</td><td>1.04GB</td><td>日常问答</td><td><span class="status-pill">已验证基线</span></td></tr>
-            <tr><td>均衡版</td><td>16GB 内存</td><td>Qwen2.5 3B</td><td>约 2GB</td><td>写作与办公</td><td><span class="status-pill pending">待实测</span></td></tr>
-            <tr><td>性能版</td><td>16GB + 8GB 显存</td><td>Qwen2.5 7B</td><td>约 4.5GB</td><td>长文与代码</td><td><span class="status-pill pending">待实测</span></td></tr>
-            <tr><td>高级版</td><td>NVIDIA 12GB+</td><td>Qwen3.8 27B</td><td>9.95–19.13GB</td><td>长文 / Agent</td><td><span class="status-pill advanced-pill">实验性</span></td></tr>
+            <tr><td>轻量版</td><td>8GB 内存</td><td>Qwen2.5 1.5B</td><td>1.04GB</td><td>日常问答</td></tr>
+            <tr><td>均衡版</td><td>16GB 内存</td><td>Qwen2.5 3B</td><td>约 2GB</td><td>写作与办公</td></tr>
+            <tr><td>性能版</td><td>16GB + 8GB 显存</td><td>Qwen2.5 7B</td><td>约 4.5GB</td><td>长文与代码</td></tr>
+            <tr><td>高级版</td><td>NVIDIA 12GB+</td><td>Qwen3.8 27B</td><td>9.95–19.13GB</td><td>长文 / Agent</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="enterprise-band compact-band"><div class="container enterprise-inner"><div><p class="eyebrow">NEED A CUSTOM PLAN?</p><h2>企业硬件和模型组合，可以单独交付。</h2><p>我们正在把 LocalDeploy 的部署能力扩展成企业私有化服务。</p></div><a class="button button-light" href="enterprise.html">查看企业部署 <span>↗</span></a></div></section>
+    <section class="enterprise-band compact-band"><div class="container enterprise-inner"><div><p class="eyebrow">NEED A CUSTOM PLAN?</p><h2>企业硬件和模型组合，可以单独交付。</h2><p>LocalDeploy 提供企业私有化部署、模型定制和长期运维服务。</p></div><a class="button button-light" href="enterprise.html">查看企业部署 <span>↗</span></a></div></section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="assets/logo-mark.svg" alt=""><span>LocalDeploy</span><small>本地模型部署平台</small></div><div class="footer-links"><a href="index.html">首页</a><a href="enterprise.html">企业部署</a><a href="https://github.com/Pingredsai/localdeploy">GitHub</a><a href="mailto:siquhjh@163.com">联系</a></div><p>© 2026 LocalDeploy · Windows Beta in progress</p></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="assets/logo-mark.svg" alt=""><span>LocalDeploy</span><small>本地模型部署平台</small></div><div class="footer-links"><a href="index.html">首页</a><a href="enterprise.html">企业部署</a><a href="https://github.com/Pingredsai/localdeploy">GitHub</a><a href="mailto:siquhjh@163.com">联系</a></div><p>© 2026 LocalDeploy · Windows 10 / 11</p></div></footer>
   <script src="assets/site.js"></script>
 </body>
 </html>

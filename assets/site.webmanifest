@@ -1,0 +1,12 @@
+﻿{
+  "name": "LocalDeploy",
+  "short_name": "LocalDeploy",
+  "description": "本地模型部署平台",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5f4ee",
+  "theme_color": "#10201e",
+  "icons": [
+    {"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}

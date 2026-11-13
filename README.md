@@ -1,5 +1,8 @@
 # LocalDeploy 官网
 
+**线上地址：** https://pingredsai.github.io/localdeploy/  
+**仓库：** https://github.com/Pingredsai/localdeploy
+
 静态站点，无构建步骤，可直接发布到 GitHub Pages。
 
 ## 页面
